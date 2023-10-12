@@ -1,0 +1,7 @@
+POST http://localhost:8888/api/articles
+Content-Type: application/json; charset=utf-8;
+
+{
+  "title": "지야지야",
+  "content": "잘지내?"
+}

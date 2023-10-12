@@ -1,0 +1,7 @@
+PUT http://localhost:8888/api/articles/56
+Content-Type: application/json
+
+{
+  "title": "제목을 수정해봅시다. 33",
+  "content": "본문을 수정해봅니다. 33"
+}
