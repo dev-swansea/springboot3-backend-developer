@@ -7,14 +7,12 @@ spring:
     url: jdbc:mysql://localhost:3306/suwan_board?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true
     username: board
     password: board
-  jpa:
-    show-sql: true # 전송 쿼리 확인
-    properties:
-      hibernate:
-        format_sql: true
-      ddl-auto: create
-    hibernate:
-      defer-datasource-initialization: true
   sql:
     init:
       mode: always
+  jpa:
+    hibernate:
+      ddl-auto: create
+    defer-datasource-initialization: true
+  thymeleaf:
+    cache: false
