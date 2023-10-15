@@ -16,3 +16,6 @@ spring:
     defer-datasource-initialization: true
   thymeleaf:
     cache: false
+jwt:
+  issuer: suwan@naver.com
+  secret_key: study-springboot
