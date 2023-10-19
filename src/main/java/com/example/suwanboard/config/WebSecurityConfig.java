@@ -1,3 +1,4 @@
+/*
 package com.example.suwanboard.config;
 
 import com.example.suwanboard.service.UserDetailService;
@@ -10,7 +11,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
-@Configuration
+//@Configuration
 @RequiredArgsConstructor
 public class WebSecurityConfig {
 
@@ -58,3 +59,4 @@ public class WebSecurityConfig {
     return new BCryptPasswordEncoder();
   }
 }
+*/

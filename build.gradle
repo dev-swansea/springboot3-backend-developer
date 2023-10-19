@@ -27,10 +27,16 @@ dependencies {
     implementation 'io.jsonwebtoken:jjwt:0.9.1'
     // XML 문서와 Java 객체 간 매핑을 자동화
     implementation 'javax.xml.bind:jaxb-api:2.3.1'
+    // OAuth2를 사용하기 위한 스타터 추가
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
     runtimeOnly 'com.mysql:mysql-connector-j'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     // 시큐리티 테스트를 위함
     testImplementation 'org.springframework.security:spring-security-test'
+
+    // https://mvnrepository.com/artifact/com.google.code.gson/gson
+    implementation 'com.google.code.gson:gson:2.10.1'
+
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     testCompileOnly 'org.projectlombok:lombok'

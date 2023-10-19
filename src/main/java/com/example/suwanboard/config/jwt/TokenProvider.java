@@ -22,13 +22,20 @@ public class TokenProvider {
 
   private final JwtProperties jwtProperties;
 
+  /**
+   * JWT 토큰을 생성한다.
+   *
+   * @param user
+   * @param expireAt
+   * @return JWT token:String
+   */
   public String generateToken(User user, Duration expireAt) {
     Date now = new Date();
-    return makeToken(new Date(now.getTime() + expireAt.toMillis()), user);
+    return makeToken(user, new Date(now.getTime() + expireAt.toMillis()));
   }
 
   // 1) JWT 토큰 생성 메서드
-  private String makeToken(Date expire, User user) {
+  private String makeToken(User user, Date expire) {
     Date now = new Date();
 
     return Jwts.builder()
